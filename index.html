@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            text-align: center;
+            border: medium solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: thin solid black;
+            margin: 0px;
+        }
+
+        th{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabla01</caption>
+        <thead>
+           <th>Curso</th> 
+           <th>Asignatura</th>
+           <th>Aula</th> 
+           <th>Alumnos matriculados</th>
+           
+        </thead>
+        <tbody>
+            <tr>
+                <td>1º</td>
+                <td>Sistemas Informáticos</td>
+                <td rowspan="2">R11</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td>Diseño de interfaces web</td>
+                <!-- <td>R11</td> -->
+                <td>20</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <td colspan="3" style="text-align: right;" >Total de Alumnos</td>
+            <td>47</td>
+        </tfoot>
+    </table>
+        <br/><br/><br/>
+    <table style="border-collapse: collapse">
+        <caption>Tabla 02 (con collapse y columnas alternas)</caption>
+        <colgroup>
+            <col style="background-color: aqua">
+            <col style="background-color: beige">
+            <col style="background-color: aqua">
+            <col style="background-color: beige">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th id="cabCurso">Curso</th>
+                <th id="cabAsignatura">Asignatura</th>
+                <th id="cabAula">Aula</th>
+                <th id="cabAlumnos">Alumn@s matriculados</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="cabCurso">1º</td>
+                <td headers="cabAsignatura">Sistemas Informáticos</td>
+                <td>R11</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td>Diseño de Interfaces Web</td>
+                <td>R11</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Todas</td>
+                <td></td>
+                <td>47</td>
+            </tr>
+        </tfoot>  
+
+        <br/><br/><br/>
+
+
+        <table style="border-collapse: collapse; width:500px; height:500px">
+            <caption>Tabla 03 (Mondrian)</caption>                        
+            <tbody>
+                              
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color: yellow;"></td>
+                    <td style="background-color: yellow;"></td>
+
+                    
+                </tr>
+                
+                <tr>
+                  <td></td>
+                  <td colspan="4" rowspan="2" style="background-color: red;"></td>
+                  <td colspan="2" style="background-color: yellow;"></td>
+                  
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
+                </tr>
+            
+                <tr>
+                    <td></td>
+                    <td colspan="2" rowspan="2" style="background-color: black;"></td> 
+                    <td></td>
+                    <td></td> 
+                    <td></td> 
+                    <td></td> 
+                </tr>
+                <tr>
+                    <td style="background-color: yellow;"></td>
+                    <td></td>
+                    <td></td> 
+                    <td style="background-color: blue;"></td> 
+                    <td style="background-color: blue;"></td> 
+                    <td style="background-color: red;"></td>
+                     
+                </tr>
+                <tr>
+                    <td style="background-color: yellow"></td>
+                    <td></td>
+                    <td></td> 
+                    <td style="background-color: black;"></td> 
+                    <td style="background-color: black;"></td> 
+                    <td style="background-color: blue;"></td> 
+                    <td style="background-color: blue;"></td>
+                    <td style="background-color: red;"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: yellow"></td>
+                    <td></td>
+                    <td></td> 
+                    <td></td> 
+                    <td></td> 
+                    <td></td> 
+                    <td></td>
+                    <td style="background-color: red;"></td>
+                </tr>
+               
+            </tbody>                        
+        </table>
+    </table>
+
+    
+</body>
+</html>
